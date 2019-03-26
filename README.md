@@ -46,6 +46,7 @@ No | HostName |    IP    | Keterangan  |
   
 
 - masuk ke direktori /var/www/html/wp-admin/includes
+
 - copy schema.php ke file vagrant untuk memudahkan dalam mengedit
   
   (proxy)```cp /var/www/html/wp-admin/includes/schema.php /vagrant```
@@ -85,10 +86,13 @@ http://192.168.33.14/wordpress/wordpress
 
 
 ## 3. Cek Schema
+
 schema yang telah dibuat pada wordpress, otomatis akan ada didalam dbcluster2, dan dbcluster3
+
 ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/ets%20tables.png)
 
 - masuk ke cluster2
+
   (dbcluster2)```vagrant ssh dbcluster2```
   
   (dbcluster2)```mysql -u wordpress -p -h 192.168.33.14 -P 6033```
@@ -96,21 +100,29 @@ schema yang telah dibuat pada wordpress, otomatis akan ada didalam dbcluster2, d
   (dbcluster2)```show databases;```
   
 (maka akan muncul database yang telah dibuat ex:ets)
+
   (dbcluster2)```use ets;
 
 ## 4. Test Database
+
 - cek status ndb pada salah satu node (cluster2)
+
 (dbcluster2)```ndb_mgm```
 
 (dbcluster2)```show```
+
 ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/show%20databases.png)
 
 - matikan salah satu node cluster3
+
 (dbcluster3)```sudo systemctl stop mysql```
 
 cek dinode cluster2
+
 (dbcluster2)```show```
+
 ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/cek%20salah%20satu%20node%20mati.png)
 
 matikan kedua node
+
 (dbcluster2 dan dbcluster3)```sudo systemctl stop mysql
