@@ -73,23 +73,23 @@ No | HostName |    IP    | Keterangan  |
   (proxy)```sudo nano wp-config```
 
 - masukkan nama database, username, password dan hostname sesuai dengan yg telah dibuat
-![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/wp-config%20.png)
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/wp-config%20.png)
 
 - buka wordpress pada browser
-http://192.168.33.14/wordpress/wordpress
+  http://192.168.33.14/wordpress/wordpress
 
 - maka akan muncul tampilan seperti :
-![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/installwordpress.png)
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/installwordpress.png)
 
 - ikuti langkah instalasi wordpress
-![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/login.png)
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/login.png)
 
 
 ## 3. Cek Schema
 
 schema yang telah dibuat pada wordpress, otomatis akan ada didalam dbcluster2, dan dbcluster3
 
-![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/ets%20tables.png)
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/ets%20tables.png)
 
 - masuk ke cluster2
 
@@ -99,7 +99,7 @@ schema yang telah dibuat pada wordpress, otomatis akan ada didalam dbcluster2, d
   
   (dbcluster2)```show databases;```
   
-(maka akan muncul database yang telah dibuat ex:ets)
+  (maka akan muncul database yang telah dibuat ex:ets)
 
   (dbcluster2)```use ets;
 
@@ -107,22 +107,22 @@ schema yang telah dibuat pada wordpress, otomatis akan ada didalam dbcluster2, d
 
 - cek status ndb pada salah satu node (cluster2)
 
-(dbcluster2)```ndb_mgm```
+  (dbcluster2)```ndb_mgm```
 
-(dbcluster2)```show```
+  (dbcluster2)```show```
 
-![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/show%20databases.png)
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/show%20databases.png)
 
-- matikan salah satu node cluster3
+ - matikan salah satu node cluster3
 
-(dbcluster3)```sudo systemctl stop mysql```
+  (dbcluster3)```sudo systemctl stop mysql```
 
-cek dinode cluster2
+- cek dinode cluster2
 
-(dbcluster2)```show```
+  (dbcluster2)```show```
 
-![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/cek%20salah%20satu%20node%20mati.png)
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/cek%20salah%20satu%20node%20mati.png)
 
-matikan kedua node
+- matikan kedua node
 
-(dbcluster2 dan dbcluster3)```sudo systemctl stop mysql
+  (dbcluster2 dan dbcluster3)```sudo systemctl stop mysql
