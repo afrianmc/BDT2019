@@ -14,3 +14,5 @@
 - Sambungkan ke Cluster dengan klik ```CONNECT```
   ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Implementasi_MongoDB/Screenshot/connect%20to%20cluster.PNG)
 
+- Setelah disambungkan, buka MongoDB Compass yang sudah di install. Maka akan muncul tampilan seperti dibawah ini:
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Implementasi_MongoDB/Screenshot/Connect.PNG)
