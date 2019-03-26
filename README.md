@@ -72,19 +72,21 @@ No | HostName |    IP    | Keterangan  |
   (proxy)```sudo nano wp-config```
 
 - masukkan nama database, username, password dan hostname sesuai dengan yg telah dibuat
-(screenshot wp-config)
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/wp-config%20.png)
 
 - buka wordpress pada browser
 http://192.168.33.14/wordpress/wordpress
 
 - maka akan muncul tampilan seperti :
-(screenshot)
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/installwordpress.png)
 
 - ikuti langkah instalasi wordpress
-(screenshot)
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/login.png)
+
 
 ## 3. Cek Schema
 schema yang telah dibuat pada wordpress, otomatis akan ada didalam dbcluster2, dan dbcluster3
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/ets%20tables.png)
 
 - masuk ke cluster2
   (dbcluster2)```vagrant ssh dbcluster2```
@@ -101,14 +103,14 @@ schema yang telah dibuat pada wordpress, otomatis akan ada didalam dbcluster2, d
 (dbcluster2)```ndb_mgm```
 
 (dbcluster2)```show```
-(screenshot)
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/show%20databases.png)
 
 - matikan salah satu node cluster3
 (dbcluster3)```sudo systemctl stop mysql```
 
 cek dinode cluster2
 (dbcluster2)```show```
-(screenshoot)
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/Screenshot/cek%20salah%20satu%20node%20mati.png)
 
 matikan kedua node
 (dbcluster2 dan dbcluster3)```sudo systemctl stop mysql
