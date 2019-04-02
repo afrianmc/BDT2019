@@ -26,3 +26,9 @@
   
 - cek mongodb compass, jika berhasil akan keluar output seperti ini:
   ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Implementasi_MongoDB/Screenshot/Cekdataset.jpeg)
+  
+Referensi:
+
+- https://www.mongodb.com/cloud/atlas
+
+- https://www.youtube.com/watch?v=tpz-6Trd1UI
