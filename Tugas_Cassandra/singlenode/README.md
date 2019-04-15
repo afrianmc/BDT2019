@@ -2,7 +2,7 @@
 
 Sebelumnya, buat konfigurasi Vagrant file sebagai berikut :
 
-![ss]
+![ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/singlenode/screenshoot/Vagrantfile.PNG)
 
 ## Install Java Oracle
 
@@ -17,8 +17,6 @@ Sebelumnya, buat konfigurasi Vagrant file sebagai berikut :
   sudo add-apt-repository ppa:webupd8team/java    # add repository java
   sudo apt-get update                             # apt-get update untuk repository java yang baru agar repository yang baru ikut         terupdate
   ```
-  Output:
-  ![Ss]
   
 3. Install Java:
   ```
@@ -29,7 +27,7 @@ Sebelumnya, buat konfigurasi Vagrant file sebagai berikut :
   java -version
   ```
   Output:
-  ![Ss]
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/singlenode/screenshoot/java%20version1.png)
   
 ## Install Cassandra
 
@@ -43,8 +41,6 @@ Sebelumnya, buat konfigurasi Vagrant file sebagai berikut :
   curl https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -
   sudo apt-get update                                                   # update repository
   ```
-  Output:
-  ![Ss]
   
 3. Install Cassandra
   ```
@@ -56,21 +52,24 @@ Sebelumnya, buat konfigurasi Vagrant file sebagai berikut :
   nodetool status
   ```
   Output:
-  ![Ss]
+  
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/singlenode/screenshoot/nodetool%20status1.png)
   
   Kemudiaan cek running Cassandra:
   ```
   sudo service cassandra status
   ```
   Output:
-  ![Ss]
+  
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/singlenode/screenshoot/sudo%20service%20cassandra%20status1.png)
   
 4. Connect dengan cqlsh
   ```
   cqlsh
   ```
   Output:
-  ![Ss]
+  
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/singlenode/screenshoot/cqlsh1.png)
   
 ## Referensi
 https://www.digitalocean.com/community/tutorials/how-to-install-cassandra-and-run-a-single-node-cluster-on-ubuntu-14-04
