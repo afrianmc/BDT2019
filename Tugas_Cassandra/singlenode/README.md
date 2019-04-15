@@ -1,5 +1,2 @@
-Afrian MutfiatuL Chusnah
+#Instalasi Cassandra Single Node
 
-BDT
-
-05111540000005
