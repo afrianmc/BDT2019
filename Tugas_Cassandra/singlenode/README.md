@@ -27,6 +27,7 @@ Sebelumnya, buat konfigurasi Vagrant file sebagai berikut :
   java -version
   ```
   Output:
+  
   ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/singlenode/screenshoot/java%20version1.png)
   
 ## Install Cassandra
