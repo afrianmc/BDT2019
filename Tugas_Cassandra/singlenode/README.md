@@ -1,4 +1,4 @@
-# Instalasi Cassandra Single Node
+# Installasi Cassandra Single Node
 
 Sebelumnya, buat konfigurasi Vagrant file sebagai berikut :
 
