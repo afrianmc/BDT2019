@@ -54,7 +54,15 @@ Sebelumnya, buat konfigurasi Vagrant file dan lakukan installasi java dan cassan
   
   ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/multinode/screenshoot/cqlsh1.png)
 
-   ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/multinode/screenshoot/cqlsh2.png)
+  ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/multinode/screenshoot/cqlsh2.png)
+   
+## Import Dataset
+
+### Dataset
+
+    ![Ss]()
+    
+    Dalam kesempatan kali ini, saya menggunakan dataset dari <a href="https://www.kaggle.com">Kaggle</a> yaitu dataset <a         href="https://www.kaggle.com/koki25ando/salary">NBA Player Salary Dataset (2017 - 2018)</a>. Dataset diambil dari Referensi Basket.   Dataset ini sangat sederhana yang hanya mencakup informasi tentang nama pemain, tim, dan jumlah gaji. 
 
   
 ## Referensi
