@@ -147,3 +147,5 @@ Sebelumnya, buat konfigurasi Vagrant file dan lakukan installasi java dan cassan
   
 ## Referensi
 https://www.digitalocean.com/community/tutorials/how-to-run-a-multi-node-cluster-database-with-cassandra-on-ubuntu-14-04
+http://tutorialwindow.com/how-to-import-data-from-excel-or-csv-files-to-cassandra-database
+https://www.kaggle.com
