@@ -56,14 +56,93 @@ Sebelumnya, buat konfigurasi Vagrant file dan lakukan installasi java dan cassan
 
   ![Ss](https://github.com/afrianmc/BDT2019/blob/master/Tugas_Cassandra/multinode/screenshoot/cqlsh2.png)
    
-## Import Dataset
+# Import Dataset
 
-## Dataset
+  ## Dataset
 
   ![Ss]()
     
   Dalam kesempatan kali ini, saya menggunakan dataset dari <a href="https://www.kaggle.com">Kaggle</a> yaitu dataset <a           href="https://www.kaggle.com/koki25ando/salary">NBA Player Salary Dataset (2017 - 2018)</a>. Dataset diambil dari Referensi Basket.     Dataset ini sangat sederhana yang hanya mencakup informasi tentang nama pemain, tim, dan jumlah gaji. 
+  
+  ## Import Dataset
+  
+  - Masuk ke cassandra dengan sintaks:
+  
+  ```
+    cqlsh 192.168.33.12
+  ```
+  ![Ss]()
 
+  - Buatlah keyspace/database pada cassandra sesuai dengan database yg akan dibuat.
+  
+  ```
+    CREATE KEYSPACE healthdb1 WITH REPLICATION = { 'class' : 'NetworkTopologyStrategy', 'dc1' : 2 }
+  ```
+  ![Ss]()
+  
+  - Buatlah tabel dalam keyspace/database yang sudah dibuat.
+  
+   ```
+    CREATE TABLE healtdb1.salary2 (Id_no int PRIMARY KEY, Player text, Tm text, season17_18 int );
+   ```
+   ![Ss]()
+   
+  - Import dataset yang digunakan
+  
+  ```
+    COPY healthdb1.salary2 (Id_no, Player, Tm, season17_18) FROM '/vagrant/NBA_season1718_salary.csv' WITH DELIMITER=',' AND HEADER=TRUE;
+  ```
+  ![Ss]()
+  
+  ## CRUD
+  
+  - Masuk kedalam cassandra yang sudah dibuat.
+  
+  ```
+    cqlsh healthdb1
+  ```
+  ![Ss]()
+  
+  - Create, Membuat data baru
+ 
+  ```
+    INSERT INTO healthdb1.salary2 (Id_no, Player, Tm, season17_18) VALUES (1000, 'Afrian', 'NBA', 1500000);
+  ```
+  
+   Cek :
+  ```
+    SELECT * FROM salary2
+  ```
+  ![Ss]()
+  
+  - Read, Cek hasil import dataset
+  ```
+    SELECT * FROM salary2
+  ```
+  ![Ss]()
+  
+  - Update, mengedit data yang sudah ada
+  ```
+  UPDATE healthdb1.salary2 Tm='ATL' WHERE Id_no=1000;
+  ```
+  
+   Cek :
+  ```
+    SELECT * FROM salary2
+  ```
+  ![Ss]()
+  
+  - Delete, menghapus data yang ada
+  ```
+    DELETE FROM healthdb1.salary2 WHERE Id_no=1000;
+  ```
+  
+  Cek :
+  ```
+    SELECT * FROM salary2
+  ```
+  ![Ss]()
+  
   
 ## Referensi
 https://www.digitalocean.com/community/tutorials/how-to-run-a-multi-node-cluster-database-with-cassandra-on-ubuntu-14-04
