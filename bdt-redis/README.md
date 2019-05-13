@@ -36,6 +36,7 @@ sudo ufw allow from 192.168.33.11 #Slave1
 sudo ufw allow from 192.168.33.12 #Slave2
 ```
 - Setelah melakukan instalasi maka akan terdapat file ```redis.conf``` dan ```sentinel.conf```. Lakukanlah konfigurasi pada file tersebut pada masing-masing node
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/slave1.png)
 
 - Selanjutnya ubahlah konfigurasi file redis.conf seperti berikut:
 ```
@@ -76,23 +77,21 @@ src/redis-server sentinel.conf --sentinel &
 ps -ef | grep redis
 ```
 maka akan muncul gambar seperti berikut:
-
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2012-56-23.png)
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2012-56-35.png)
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2012-56-44.png)
 
 - Selanjutnya lakukan ping ke masing-masing node dengan sintak seperti berikut:
 ```
 redis-cli -h [ip address] ping #masukkan ip address masing-masing node
 ```
-![ss]
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2013-00-05.png)
 redis telah berhasil jalan tanpa adanya error
 
 - Mengecek log dari master dengan sintaks seperti berikut:
 ```
 cat redis.conf
 ```
-- Maka akan muncul gambar seperti berikut:
-
-![ss]
-
 
 - Mengecek info replikasi dari masing-masing node dengan sintaks:
 ```
@@ -100,15 +99,15 @@ redis-cli
 ```
 Master
 
-![ss]
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2013-03-44.png)
 
 Slave1
 
-![ss]
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2013-03-56.png)
 
 slave2
 
-![ss]
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2013-04-16.png)
 
 masing-masing node telah terreplikasi dengan baik 
 
@@ -117,14 +116,14 @@ masing-masing node telah terreplikasi dengan baik
 ```
 redis-cli -p 6379 DEBUG sleep 30
 ```
-![ss]
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2013-05-53.png)
 
 - jika master berhasil dimatikan, maka salah satu slave akan menjadi master.
 
-![ss]
-![ss]
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2013-07-38.png)
+![ss](https://github.com/afrianmc/BDT2019/blob/master/bdt-redis/ss/Screenshot%20from%202019-05-13%2013-07-30.png)
 
-pada kasus ini slave2 menjadi master dan redis tetap berjalan setelah master dimatikan.
+pada kasus ini slave1 menjadi master dan redis tetap berjalan setelah master dimatikan.
 
 ## Referensi
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
