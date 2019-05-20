@@ -5,18 +5,12 @@
 # Model Arsitektur
   
   Pada Desain MySQL Cluster dan Redis kali ini, saya menggunakan 4 node dengan pembagian sebagai berikut :
-
-   No. | IP Address|   Hostname   |  Deskrips  |
+No | HostName |    IP    | Keterangan  |
 ---|----------|----------|-------------|
-  1. | 192.168.33.11 | dbcluster1 | Sebagai Manager dan Redis |
-  ---|---------------|-----------|--------------------|
-   2. | 192.168.33.12 | dbcluster2 | Sebagai Server1 dan Node1 dan Redis | 
-     ---|---------------|-----------|--------------------|
-   3. | 192.168.33.13 | dbcluster3 | Sebagai Server2 dan Node2 dan Redis |
-     ---|---------------|-----------|--------------------|
-   4. | 192.168.33.14 | dbcluster4 | Sebagai Load Balancer (ProxySQL) |
-     ---|---------------|-----------|--------------------|
-  
+1  |master    |192.168.33.10 |Master|
+2 |slaveredis1|192.168.33.11|Slave 1|
+3 |slaveredis2|192.168.33.12|Slave 2|
+
 # Installasi 
   
  
