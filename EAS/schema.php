@@ -266,7 +266,7 @@ CREATE TABLE $wpdb->blog_versions (
 	last_updated datetime NOT NULL default '0000-00-00 00:00:00',
 	PRIMARY KEY  (blog_id),
 	KEY db_version (db_version)
-) ENGINE=ndbcluster $charset_collate;
+) ENGINE=ndbcluster charset_collate;
 CREATE TABLE $wpdb->blogmeta (
 	meta_id bigint(20) unsigned NOT NULL auto_increment,
 	blog_id bigint(20) NOT NULL default '0',

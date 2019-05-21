@@ -3,8 +3,8 @@
 
 Vagrant.configure("2") do |config|
   (1..4).each do |i|
-    config.vm.define "dbcluster#{i}" do |node|
-      node.vm.hostname = "dbcluster#{i}"
+    config.vm.define "db-cluster#{i}" do |node|
+      node.vm.hostname = "db-cluster#{i}"
       node.vm.box = "bento/ubuntu-18.04"
       node.vm.network "private_network", ip: "192.168.33.1#{i}"
 
@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
       # node.vm.network "public_network", bridge: "Qualcomm Atheros QCA9377 Wireless Network Adapter"
       
       node.vm.provider "virtualbox" do |vb|
-        vb.name = "dbcluster#{i}"
+        vb.name = "db-cluster#{i}"
         vb.gui = false
         vb.memory = "512"
       end
