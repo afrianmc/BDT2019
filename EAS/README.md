@@ -29,7 +29,7 @@ No | HostName |    IP    | Keterangan  |
 
  - Install plugin `Rredis Object Cache`
  `Plugins > Add New > Redis Object Cache > Install Now > Activate`
- [!Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-20%2021-19-49.png)
+ ![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-20%2021-19-49.png)
  
  - Buka wp-config.php pada proxy 
  `sudo nano wp-config.php`
@@ -50,14 +50,14 @@ define('WP_CACHE', true);  #WP_CACHE membuat cache persistent dengan plugin redi
 
  - Mengecek koneksi redis
  ` Settings > Redis > Enable Object Cache`
- [!Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-08-33.png)
+ ![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-08-33.png)
  
  - Konfigurasi wp-config.php
   NB : Status redis connected dengan 3 server yang telah kita konfigurasi sebelumnya.
 
 - Monitoring dilakukan pada redis master dan slave 1, 2 :
 `redis-cli monitor`
-[!Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-06.png
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-06.png
 
 - Coba dengan membuat post baru pada wordpress
 ![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-54.png)
