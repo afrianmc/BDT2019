@@ -60,10 +60,10 @@ define('WP_CACHE', true);  #WP_CACHE membuat cache persistent dengan plugin redi
 [!Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-06.png
 
 - Coba dengan membuat post baru pada wordpress
-[!Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-54.png)
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-54.png)
 
 - Coba buka post yang sudah dibuat
-[!Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-12-48.png)
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-12-48.png)
 
 # Referensi
 https://medium.com/@amila922/redis-sentinel-high-availability-everything-you-need-to-know-from-dev-to-prod-complete-guide-deb198e70ea6
