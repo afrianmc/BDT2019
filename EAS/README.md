@@ -57,7 +57,7 @@ define('WP_CACHE', true);  #WP_CACHE membuat cache persistent dengan plugin redi
 
 - Monitoring dilakukan pada redis master dan slave 1, 2 :
 `redis-cli monitor`
-![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-06.png
+![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-06.png)
 
 - Coba dengan membuat post baru pada wordpress
 ![Ss](https://github.com/afrianmc/BDT2019/blob/master/EAS/ss/Screenshot%20from%202019-05-22%2001-11-54.png)
